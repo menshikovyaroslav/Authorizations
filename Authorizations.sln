@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "service.citroen.com", "Cata
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mail.ru", "Catalogs\mail.ru\mail.ru.csproj", "{1A8C5EC6-6631-4FDA-99A7-6C1F5421235D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "suzuki.snaponepc.com", "Catalogs\suzuki.snaponepc.com\suzuki.snaponepc.com.csproj", "{A3E92B85-FF2E-4DCC-9ED0-DB048FEAB852}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{1A8C5EC6-6631-4FDA-99A7-6C1F5421235D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A8C5EC6-6631-4FDA-99A7-6C1F5421235D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A8C5EC6-6631-4FDA-99A7-6C1F5421235D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3E92B85-FF2E-4DCC-9ED0-DB048FEAB852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E92B85-FF2E-4DCC-9ED0-DB048FEAB852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E92B85-FF2E-4DCC-9ED0-DB048FEAB852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E92B85-FF2E-4DCC-9ED0-DB048FEAB852}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,5 +73,6 @@ Global
 		{3F7D7DAB-86E7-4685-BF4C-360B42FE54A3} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{15122123-E780-4206-B888-657295ADC96D} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{1A8C5EC6-6631-4FDA-99A7-6C1F5421235D} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
+		{A3E92B85-FF2E-4DCC-9ED0-DB048FEAB852} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 	EndGlobalSection
 EndGlobal
