@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "suzuki.snaponepc.com", "Cat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "www.kia-hotline.com", "Catalogs\www.kia-hotline.com\www.kia-hotline.com.csproj", "{96B08C90-E921-46D4-8E9D-3ABC5DA838B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "service.hyundai-motor.com", "Catalogs\service.hyundai-motor.com\service.hyundai-motor.com.csproj", "{AF906E82-5616-43FD-85A3-999DA120243F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{96B08C90-E921-46D4-8E9D-3ABC5DA838B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96B08C90-E921-46D4-8E9D-3ABC5DA838B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96B08C90-E921-46D4-8E9D-3ABC5DA838B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF906E82-5616-43FD-85A3-999DA120243F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF906E82-5616-43FD-85A3-999DA120243F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF906E82-5616-43FD-85A3-999DA120243F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF906E82-5616-43FD-85A3-999DA120243F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,5 +87,6 @@ Global
 		{1A8C5EC6-6631-4FDA-99A7-6C1F5421235D} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{A3E92B85-FF2E-4DCC-9ED0-DB048FEAB852} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{96B08C90-E921-46D4-8E9D-3ABC5DA838B8} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
+		{AF906E82-5616-43FD-85A3-999DA120243F} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 	EndGlobalSection
 EndGlobal
