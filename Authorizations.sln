@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "workshopdata.com", "Catalog
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "portal-etc-auto.vaz.ru", "Catalogs\portal-etc-auto.vaz.ru\portal-etc-auto.vaz.ru.csproj", "{38A356AC-BEB4-4984-B52A-EEFB305F5262}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iepc.geely.com", "Catalogs\iepc.geely.com\iepc.geely.com.csproj", "{5AE99D3E-2C39-4F9B-AA13-32C56B84A784}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +87,10 @@ Global
 		{38A356AC-BEB4-4984-B52A-EEFB305F5262}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38A356AC-BEB4-4984-B52A-EEFB305F5262}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38A356AC-BEB4-4984-B52A-EEFB305F5262}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AE99D3E-2C39-4F9B-AA13-32C56B84A784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE99D3E-2C39-4F9B-AA13-32C56B84A784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE99D3E-2C39-4F9B-AA13-32C56B84A784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE99D3E-2C39-4F9B-AA13-32C56B84A784}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -102,5 +108,6 @@ Global
 		{AF906E82-5616-43FD-85A3-999DA120243F} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{B4D52B00-A375-44A3-B2A6-2BA3424E466E} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{38A356AC-BEB4-4984-B52A-EEFB305F5262} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
+		{5AE99D3E-2C39-4F9B-AA13-32C56B84A784} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 	EndGlobalSection
 EndGlobal
