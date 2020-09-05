@@ -14,7 +14,7 @@ namespace suzuki.snaponepc.com
     {
         static void Main(string[] args)
         {
-            // Each suzuki account have two parameters : User, Password
+            // Each suzuki account has two parameters : User, Password
             var user = "user";              // !!! rewrite value from your account !!!
             var password = "password";      // !!! rewrite value from your account !!!
 

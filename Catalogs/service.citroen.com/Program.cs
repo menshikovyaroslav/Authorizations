@@ -9,7 +9,7 @@ namespace service.citroen.com
     {
         static void Main(string[] args)
         {
-            // Each citroen account have two parameters : User, Password
+            // Each citroen account has two parameters : User, Password
             var user = "user";              // !!! rewrite value from your account !!!
             var password = "password";      // !!! rewrite value from your account !!!
 

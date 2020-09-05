@@ -9,7 +9,7 @@ namespace www.ecom.honda_eu.com
     {
         static void Main(string[] args)
         {
-            // Each honda account have four parameters : Country, Business Unit, User, Password
+            // Each honda account has four parameters : Country, Business Unit, User, Password
             var country = "country";
             var businessUnit = "businessUnit";
             var user = "user";

@@ -9,7 +9,7 @@ namespace service.hyundai_motor.com
     {
         static void Main(string[] args)
         {
-            // Each hyundai account have two parameters : User, Password
+            // Each hyundai account has two parameters : User, Password
             var user = "user";              // !!! rewrite value from your account !!!
             var password = "password";      // !!! rewrite value from your account !!!
 
