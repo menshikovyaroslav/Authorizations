@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iepc.geely.com", "Catalogs\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "drom.ru", "Catalogs\drom.ru\drom.ru.csproj", "{250D1345-CDDC-4C10-99ED-D86B2A5EA2D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "etk-b2i.bmwgroup.com", "Catalogs\etk-b2i.bmwgroup.com\etk-b2i.bmwgroup.com.csproj", "{10A600F6-2320-41DA-B6FB-92C6839C67C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,10 @@ Global
 		{250D1345-CDDC-4C10-99ED-D86B2A5EA2D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{250D1345-CDDC-4C10-99ED-D86B2A5EA2D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{250D1345-CDDC-4C10-99ED-D86B2A5EA2D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10A600F6-2320-41DA-B6FB-92C6839C67C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10A600F6-2320-41DA-B6FB-92C6839C67C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10A600F6-2320-41DA-B6FB-92C6839C67C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10A600F6-2320-41DA-B6FB-92C6839C67C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -116,5 +122,6 @@ Global
 		{38A356AC-BEB4-4984-B52A-EEFB305F5262} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{5AE99D3E-2C39-4F9B-AA13-32C56B84A784} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{250D1345-CDDC-4C10-99ED-D86B2A5EA2D2} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
+		{10A600F6-2320-41DA-B6FB-92C6839C67C9} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 	EndGlobalSection
 EndGlobal
