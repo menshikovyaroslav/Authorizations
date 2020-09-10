@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eportal.daf.com", "Catalogs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pay.kvartplata.ru", "Catalogs\pay.kvartplata.ru\pay.kvartplata.ru.csproj", "{B09B67A9-980B-4C62-BBF6-599D3C512F20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "roblox.com", "Catalogs\roblox.com\roblox.com.csproj", "{C234C030-9C45-44E1-955F-F66ADBE7636D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,6 +117,10 @@ Global
 		{B09B67A9-980B-4C62-BBF6-599D3C512F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B09B67A9-980B-4C62-BBF6-599D3C512F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B09B67A9-980B-4C62-BBF6-599D3C512F20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C234C030-9C45-44E1-955F-F66ADBE7636D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C234C030-9C45-44E1-955F-F66ADBE7636D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C234C030-9C45-44E1-955F-F66ADBE7636D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C234C030-9C45-44E1-955F-F66ADBE7636D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -137,5 +143,6 @@ Global
 		{10A600F6-2320-41DA-B6FB-92C6839C67C9} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{B4D1FCAA-D4A8-439D-8FCB-2DF479CA472A} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{B09B67A9-980B-4C62-BBF6-599D3C512F20} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
+		{C234C030-9C45-44E1-955F-F66ADBE7636D} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 	EndGlobalSection
 EndGlobal
