@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pay.kvartplata.ru", "Catalo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "roblox.com", "Catalogs\roblox.com\roblox.com.csproj", "{C234C030-9C45-44E1-955F-F66ADBE7636D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mapps.mazdaeur.com", "Catalogs\mapps.mazdaeur.com\mapps.mazdaeur.com.csproj", "{87DFABB6-8DD5-4A05-B66B-8D40681480CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -121,6 +123,10 @@ Global
 		{C234C030-9C45-44E1-955F-F66ADBE7636D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C234C030-9C45-44E1-955F-F66ADBE7636D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C234C030-9C45-44E1-955F-F66ADBE7636D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87DFABB6-8DD5-4A05-B66B-8D40681480CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87DFABB6-8DD5-4A05-B66B-8D40681480CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87DFABB6-8DD5-4A05-B66B-8D40681480CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87DFABB6-8DD5-4A05-B66B-8D40681480CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -144,5 +150,6 @@ Global
 		{B4D1FCAA-D4A8-439D-8FCB-2DF479CA472A} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{B09B67A9-980B-4C62-BBF6-599D3C512F20} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{C234C030-9C45-44E1-955F-F66ADBE7636D} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
+		{87DFABB6-8DD5-4A05-B66B-8D40681480CC} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 	EndGlobalSection
 EndGlobal
