@@ -7,13 +7,13 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace mapps.mazdaeur.com
+namespace eu.nissan.biz
 {
     class Program
     {
         static void Main(string[] args)
         {
-            // Each mazda account has two parameters : User, Password
+            // Each nissan account has two parameters : User, Password
             var user = "user";              // !!! rewrite value from your account !!!
             var password = "password";      // !!! rewrite value from your account !!!
 
@@ -25,47 +25,42 @@ namespace mapps.mazdaeur.com
 
             var getRequest = new GetRequest()
             {
-                Address = "https://mapps.mazdaeur.com/epc3/servlet/LoginEPC",
+                Address = "https://eu.nissan.biz/",
                 Accept = "text/html, application/xhtml+xml, */*",
-                Host = "mapps.mazdaeur.com",
+                Host = "eu.nissan.biz",
                 KeepAlive = true,
                 Proxy = proxy
             };
             getRequest.Run(ref cookies);
 
-            // find a value of 'lt' parameter in responce
-            var nameIndex = getRequest.Response.IndexOf("name=\"lt\"");
-            var startIndex1 = nameIndex + 17;
-            var endIndex1 = getRequest.Response.IndexOf("\"", startIndex1);
-            var lt = getRequest.Response.Substring(startIndex1, endIndex1 - startIndex1);
-
             // Auth request
-            var data = $"username={WebUtility.UrlEncode(user)}&password={WebUtility.UrlEncode(password)}&lt={lt}&execution=e1s1&_eventId=submit";
+            var data = $"option=credential&target=https%3A%2F%2Feu.nissan.biz%2F&Ecom_User_ID={WebUtility.UrlEncode(user)}&Ecom_Password={WebUtility.UrlEncode(password)}&submit1=Log+in";
             var postRequest = new PostRequest()
             {
                 Data = data,
-                Address = $"https://mapps.mazdaeur.com/cas/login?service=https%3A%2F%2Fmapps.mazdaeur.com%2Fepc3%2Fj_spring_security_check",
+                Address = $"https://login.eu.nissan.biz/nidp/idff/sso?sid=0&sid=0",
                 Accept = "text/html, application/xhtml+xml, */*",
-                Host = "mapps.mazdaeur.com",
+                Host = "login.eu.nissan.biz",
                 ContentType = "application/x-www-form-urlencoded",
-                Referer = "https://mapps.mazdaeur.com/cas/login?service=https%3A%2F%2Fmapps.mazdaeur.com%2Fepc3%2Fj_spring_security_check",
+                Referer = "https://login.eu.nissan.biz/nidp/idff/sso?id=B2B&sid=0&option=credential&sid=0&target=https%3A%2F%2Feu.nissan.biz%2F",
                 KeepAlive = true,
                 Proxy = proxy
             };
             postRequest.Run(ref cookies);
 
-            // request to check our status
+            // check for a state
             getRequest = new GetRequest()
             {
-                Address = "https://mapps.mazdaeur.com/epc3/servlet/LoginEPC",
+                Address = "https://eu.nissan.biz",
                 Accept = "text/html, application/xhtml+xml, */*",
-                Host = "mapps.mazdaeur.com",
+                Host = "eu.nissan.biz",
                 KeepAlive = true,
+                TimeOut = 120000,
                 Proxy = proxy
             };
             getRequest.Run(ref cookies);
 
-            var validIndex = getRequest.Response.Contains("<title>MAZDA WEB-EPC");
+            var validIndex = getRequest.Response.Contains("nissan-user");
             if (validIndex) Config.Instance.AddLogInfo($"Auth result: successful");
             else Config.Instance.AddLogInfo($"Auth result: unknown, something was wrong");
         }
