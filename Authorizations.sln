@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eu.nissan.biz", "Catalogs\e
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "igepc.geely.com", "Catalogs\igepc.geely.com\igepc.geely.com.csproj", "{EC5F7181-CBFF-4DFA-9886-2C59BA75C19F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ngs.ru", "Catalogs\ngs.ru\ngs.ru.csproj", "{0271AE88-431D-4392-B2AB-70788CFA9FD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -139,6 +141,10 @@ Global
 		{EC5F7181-CBFF-4DFA-9886-2C59BA75C19F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC5F7181-CBFF-4DFA-9886-2C59BA75C19F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC5F7181-CBFF-4DFA-9886-2C59BA75C19F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0271AE88-431D-4392-B2AB-70788CFA9FD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0271AE88-431D-4392-B2AB-70788CFA9FD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0271AE88-431D-4392-B2AB-70788CFA9FD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0271AE88-431D-4392-B2AB-70788CFA9FD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -165,5 +171,6 @@ Global
 		{87DFABB6-8DD5-4A05-B66B-8D40681480CC} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{5D667D54-C526-448E-A13A-2166F4A201D6} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{EC5F7181-CBFF-4DFA-9886-2C59BA75C19F} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
+		{0271AE88-431D-4392-B2AB-70788CFA9FD1} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 	EndGlobalSection
 EndGlobal
