@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "igepc.geely.com", "Catalogs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ngs.ru", "Catalogs\ngs.ru\ngs.ru.csproj", "{0271AE88-431D-4392-B2AB-70788CFA9FD1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dns-shop.ru", "Catalogs\dns-shop.ru\dns-shop.ru.csproj", "{EC744ED4-8C04-491F-8DBA-2500BA1AFE3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,6 +147,10 @@ Global
 		{0271AE88-431D-4392-B2AB-70788CFA9FD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0271AE88-431D-4392-B2AB-70788CFA9FD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0271AE88-431D-4392-B2AB-70788CFA9FD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC744ED4-8C04-491F-8DBA-2500BA1AFE3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC744ED4-8C04-491F-8DBA-2500BA1AFE3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC744ED4-8C04-491F-8DBA-2500BA1AFE3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC744ED4-8C04-491F-8DBA-2500BA1AFE3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -172,5 +178,6 @@ Global
 		{5D667D54-C526-448E-A13A-2166F4A201D6} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{EC5F7181-CBFF-4DFA-9886-2C59BA75C19F} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{0271AE88-431D-4392-B2AB-70788CFA9FD1} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
+		{EC744ED4-8C04-491F-8DBA-2500BA1AFE3A} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 	EndGlobalSection
 EndGlobal
