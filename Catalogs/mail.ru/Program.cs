@@ -24,7 +24,7 @@ namespace mail.ru
             // Any proxy, for example Fiddler
             var proxy = new WebProxy("127.0.0.1:8888");
 
-            // we need to create this request to get 'windowName' parameter. it requires for auth
+            // we need to create this request to get 'token' parameter. it requires for auth
             var getRequest = new GetRequest()
             {
                 Address = "https://mail.ru/",
