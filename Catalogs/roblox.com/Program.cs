@@ -70,16 +70,17 @@ namespace roblox.com
             var idEnd = postRequest.Response.IndexOf(",", idStart);
             var id = postRequest.Response.Substring(idStart, idEnd - idStart);
 
-            getRequest = new GetRequest()
-            {
-                Address = "https://web.roblox.com/home?nl=true",
-                Accept = "text/html, application/xhtml+xml, image/jxr, */*",
-                Host = "www.roblox.com",
-                KeepAlive = true,
-                Referer = "https://www.roblox.com/login",
-                Proxy = proxy
-            };
-            getRequest.Run(ref cookies);
+            // This request isn't needed
+            //getRequest = new GetRequest()
+            //{
+            //    Address = "https://web.roblox.com/home?nl=true",
+            //    Accept = "text/html, application/xhtml+xml, image/jxr, */*",
+            //    Host = "www.roblox.com",
+            //    KeepAlive = true,
+            //    Referer = "https://www.roblox.com/login",
+            //    Proxy = proxy
+            //};
+            //getRequest.Run(ref cookies);
 
             getRequest = new GetRequest()
             {
