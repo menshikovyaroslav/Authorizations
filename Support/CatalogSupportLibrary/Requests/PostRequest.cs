@@ -18,6 +18,8 @@ namespace CatalogSupportLibrary.Requests
             _request.Headers.Add("DNT", "1");
             _request.Proxy = Proxy;
 
+            _request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+
             if (TimeOut > 0)
             {
                 _request.Timeout = TimeOut;

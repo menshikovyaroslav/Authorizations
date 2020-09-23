@@ -34,6 +34,10 @@ namespace CatalogSupportLibrary.Requests
                 ConfigurationManager.RefreshSection("system.net/settings");
             }
 
+            _request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+
+            if (!ContentType.IsEmpty()) _request.ContentType = ContentType;
+
             if (TimeOut > 0)
             {
                 _request.Timeout = TimeOut;
@@ -130,6 +134,7 @@ namespace CatalogSupportLibrary.Requests
         public string Referer { get; set; }
         public string Host { get; set; }
         public bool? KeepAlive { get; set; }
+        public string ContentType { get; set; }
         public bool? Expect100Continue { get; set; }
         public string Response { get; private set; }
         public bool? AllowAutoRedirect { get; set; }

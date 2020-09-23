@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dns-shop.ru", "Catalogs\dns
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aftersales.daimler.com", "Catalogs\aftersales.daimler.com\aftersales.daimler.com.csproj", "{60A62536-B3C8-4FC2-B0FD-4E1D2A8EE8C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blablacar.ru", "Catalogs\blablacar.ru\blablacar.ru.csproj", "{A3FA61A3-819C-47E2-AF79-09D8EBA0D16E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -157,6 +159,10 @@ Global
 		{60A62536-B3C8-4FC2-B0FD-4E1D2A8EE8C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60A62536-B3C8-4FC2-B0FD-4E1D2A8EE8C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60A62536-B3C8-4FC2-B0FD-4E1D2A8EE8C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3FA61A3-819C-47E2-AF79-09D8EBA0D16E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3FA61A3-819C-47E2-AF79-09D8EBA0D16E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3FA61A3-819C-47E2-AF79-09D8EBA0D16E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3FA61A3-819C-47E2-AF79-09D8EBA0D16E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -186,5 +192,6 @@ Global
 		{0271AE88-431D-4392-B2AB-70788CFA9FD1} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{EC744ED4-8C04-491F-8DBA-2500BA1AFE3A} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{60A62536-B3C8-4FC2-B0FD-4E1D2A8EE8C6} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
+		{A3FA61A3-819C-47E2-AF79-09D8EBA0D16E} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 	EndGlobalSection
 EndGlobal
