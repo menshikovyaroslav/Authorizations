@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "www.parts.renault.com", "Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "invest-idei.ru", "Catalogs\invest-idei.ru\invest-idei.ru.csproj", "{22D988AF-EB1E-4059-86EF-0D5EAD7A3C2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "www.nseindia.com", "Catalogs\www.nseindia.com\www.nseindia.com.csproj", "{53FC53A1-68BA-4477-9D03-D718366EAC0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -175,6 +177,10 @@ Global
 		{22D988AF-EB1E-4059-86EF-0D5EAD7A3C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22D988AF-EB1E-4059-86EF-0D5EAD7A3C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22D988AF-EB1E-4059-86EF-0D5EAD7A3C2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53FC53A1-68BA-4477-9D03-D718366EAC0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53FC53A1-68BA-4477-9D03-D718366EAC0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53FC53A1-68BA-4477-9D03-D718366EAC0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53FC53A1-68BA-4477-9D03-D718366EAC0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -207,6 +213,7 @@ Global
 		{A3FA61A3-819C-47E2-AF79-09D8EBA0D16E} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{627F6C5F-8085-494D-88D0-1D60D612F9C4} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 		{22D988AF-EB1E-4059-86EF-0D5EAD7A3C2B} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
+		{53FC53A1-68BA-4477-9D03-D718366EAC0B} = {082A94FC-2B40-4329-B005-4B3E2F66A5EE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9F972A4C-8A3F-4F5F-AD8F-24415A896864}
