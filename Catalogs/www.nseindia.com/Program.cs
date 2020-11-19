@@ -34,6 +34,10 @@ namespace www.nseindia.com
                 KeepAlive = true
             };
             getRequest.Run(ref cookies);
+
+            var html = getRequest.Response;
+            Console.WriteLine(html);
+            Console.ReadKey();
         }
     }
 }
