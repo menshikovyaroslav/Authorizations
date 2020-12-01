@@ -29,7 +29,7 @@
                     </ListBox>
                 </GroupBox>
                 <GroupBox Header="Список писем" Margin="10">
-                    <ListView />
+                    <ListView ItemsSource="{Binding Messages}" DisplayMemberPath="Presentation" />
                 </GroupBox>
             </StackPanel>
         </Border>
