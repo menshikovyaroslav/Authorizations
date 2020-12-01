@@ -6,7 +6,31 @@
         xmlns:local="clr-namespace:MailRu.Client"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Действия">
+                <MenuItem Header="Настройки"></MenuItem>
+                <MenuItem Header="Выход"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Border DockPanel.Dock="Bottom" BorderThickness="1" BorderBrush="black" CornerRadius="6" Margin="10">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel.Resources>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="Margin" Value="4"></Setter>
+                        <Setter Property="Height" Value="20"></Setter>
+                    </Style>
+                </StackPanel.Resources>
+                <GroupBox Header="Каталоги" Margin="10">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Входящие" />
+                        <TextBlock Text="Отправленные" />
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Список писем" Margin="10">
+                    <ListView />
+                </GroupBox>
+            </StackPanel>
+        </Border>
+    </DockPanel>
 </Window>
