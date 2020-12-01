@@ -1,4 +1,7 @@
-﻿using System;
+﻿using MailRu.Client.ViewModel;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +16,23 @@ namespace MailRu.Client
     /// </summary>
     public partial class App : Application
     {
+        private static IHost _hosting;
+
+        public static IHost Hosting
+        {
+            get
+            {
+                if (_hosting != null) return _hosting;
+                _hosting = Host.CreateDefaultBuilder(Environment.GetCommandLineArgs()).ConfigureServices(ConfigureServices).Build();
+                return _hosting;
+            }
+        }
+
+        private static void ConfigureServices(HostBuilderContext host, IServiceCollection services)
+        {
+            services.AddSingleton<MainViewModel>();
+        }
+
+        public static IServiceProvider Services { get { return Hosting.Services; } }
     }
 }

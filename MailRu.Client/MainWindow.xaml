@@ -4,8 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MailRu.Client"
-        mc:Ignorable="d"
+        xmlns:vm="clr-namespace:MailRu.Client.ViewModel"
+        mc:Ignorable="d" DataContext="{Binding MainVM, Source={StaticResource Locator}}"
         Title="MainWindow" Height="450" Width="800">
+
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Действия">
@@ -22,10 +24,9 @@
                     </Style>
                 </StackPanel.Resources>
                 <GroupBox Header="Каталоги" Margin="10">
-                    <StackPanel Orientation="Vertical">
-                        <TextBlock Text="Входящие" />
-                        <TextBlock Text="Отправленные" />
-                    </StackPanel>
+                    <ListBox ItemsSource="{Binding Directories}" DisplayMemberPath="Name">
+                        
+                    </ListBox>
                 </GroupBox>
                 <GroupBox Header="Список писем" Margin="10">
                     <ListView />
