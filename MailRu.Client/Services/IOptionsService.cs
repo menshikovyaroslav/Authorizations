@@ -1,20 +1,19 @@
 ﻿using MailRu.Client.Model;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MailRu.Client.Services
 {
-    public interface IMailService
+    public interface IOptionsService
     {
-        IMailRuWorker GetWorker(Auth auth);
+        IOptionsWorker GetSender();
     }
 
-    public interface IMailRuWorker
+    public interface IOptionsWorker
     {
-        ObservableCollection<Message> GetMessages();
+        Auth GetAuth();
     }
 }

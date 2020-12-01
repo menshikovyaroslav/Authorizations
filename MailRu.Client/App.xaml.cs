@@ -33,6 +33,7 @@ namespace MailRu.Client
         {
             services.AddSingleton<MainViewModel>();
             services.AddSingleton<IMailService, MailRuService>();
+            services.AddSingleton<IOptionsService, FileOptionsService>();
         }
 
         public static IServiceProvider Services { get { return Hosting.Services; } }

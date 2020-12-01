@@ -10,15 +10,15 @@ namespace MailRu.Client.Services
 {
     public class MailRuService : IMailService
     {
-        public IMailRuWorker GetSender(string login, string password)
+        public IMailRuWorker GetWorker(Auth auth)
         {
-            return new MailRuWorker(login, password);
+            return new MailRuWorker(auth);
         }
     }
 
     public class MailRuWorker : IMailRuWorker
     {
-        public MailRuWorker(string login, string password)
+        public MailRuWorker(Auth auth)
         {
 
         }

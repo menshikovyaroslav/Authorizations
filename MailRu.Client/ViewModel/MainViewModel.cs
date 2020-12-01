@@ -6,6 +6,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace MailRu.Client.ViewModel
 {
@@ -13,6 +14,7 @@ namespace MailRu.Client.ViewModel
     {
         private ObservableCollection<Directory> _directories;
         private ObservableCollection<Message> _messages;
+        private Auth _auth;
 
         public ObservableCollection<Directory> Directories
         {
@@ -26,11 +28,19 @@ namespace MailRu.Client.ViewModel
             set { _messages = value; }
         }
 
-        IMailService _mailRuService;
-
-        public MainViewModel(IMailService mailRuService)
+        public Auth Auth
         {
-            _mailRuService = mailRuService;
+            get { return _auth; }
+            set { _auth = value; }
+        }
+
+        IMailService _mailService;
+        IOptionsService _optionsService;
+
+        public MainViewModel(IMailService mailService, IOptionsService optionsService)
+        {
+            _mailService = mailService;
+            _optionsService = optionsService;
 
             Directories = new ObservableCollection<Directory>();
             Directories.Add(new Directory() { Name="Входящие" });
@@ -39,9 +49,21 @@ namespace MailRu.Client.ViewModel
 
             Messages = new ObservableCollection<Message>();
 
-            var mailServer = _mailRuService.GetSender("login", "password");
+            CheckOptions();
+
+            var mailServer = _mailService.GetWorker(Auth);
             Messages = mailServer.GetMessages();
         }
 
+        private void CheckOptions()
+        {
+            var options = _optionsService.GetSender();
+            Auth = options.GetAuth();
+
+            if (Auth.Login is null || Auth.Password is null)
+            {
+                MessageBox.Show("Options !");
+            }
+        }
     }
 }

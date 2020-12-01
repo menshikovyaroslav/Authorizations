@@ -173,9 +173,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Auth.cs" />
     <Compile Include="Model\Directory.cs" />
     <Compile Include="Model\Message.cs" />
     <Compile Include="Services\IMailService.cs" />
+    <Compile Include="Services\IOptionsService.cs" />
+    <Compile Include="Services\FileOptionsService.cs" />
     <Compile Include="Services\MailRuService.cs" />
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />

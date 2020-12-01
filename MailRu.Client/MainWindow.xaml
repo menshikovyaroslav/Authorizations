@@ -16,13 +16,13 @@
             </MenuItem>
         </Menu>
         <Border DockPanel.Dock="Bottom" BorderThickness="1" BorderBrush="black" CornerRadius="6" Margin="10">
-            <StackPanel Orientation="Horizontal">
-                <StackPanel.Resources>
+            <DockPanel>
+                <DockPanel.Resources>
                     <Style TargetType="TextBlock">
                         <Setter Property="Margin" Value="4"></Setter>
                         <Setter Property="Height" Value="20"></Setter>
                     </Style>
-                </StackPanel.Resources>
+                </DockPanel.Resources>
                 <GroupBox Header="Каталоги" Margin="10">
                     <ListBox ItemsSource="{Binding Directories}" DisplayMemberPath="Name">
                         
@@ -31,7 +31,7 @@
                 <GroupBox Header="Список писем" Margin="10">
                     <ListView ItemsSource="{Binding Messages}" DisplayMemberPath="Presentation" />
                 </GroupBox>
-            </StackPanel>
+            </DockPanel>
         </Border>
     </DockPanel>
 </Window>
