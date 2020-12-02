@@ -15,5 +15,6 @@ namespace MailRu.Client.Services
     public interface IOptionsWorker
     {
         Auth GetAuth();
+        void SetAuth(Auth auth);
     }
 }
