@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:MailRu.Client"
              xmlns:vm="clr-namespace:MailRu.Client.ViewModel"
-             StartupUri="MainWindow.xaml">
+             StartupUri="View\MainWindow.xaml">
     <Application.Resources>
         <vm:ViewModelLocator x:Key="Locator"></vm:ViewModelLocator>
     </Application.Resources>
