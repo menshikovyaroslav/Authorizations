@@ -10,5 +10,6 @@ namespace MailRu.Client.ViewModel
     public class ViewModelLocator
     {
         public MainViewModel MainVM => App.Services.GetRequiredService<MainViewModel>();
+        public OptionsViewModel OptionsVM => App.Services.GetRequiredService<OptionsViewModel>();
     }
 }

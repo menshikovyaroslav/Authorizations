@@ -1,5 +1,7 @@
-﻿using MailRu.Client.Model;
+﻿using MailRu.Client.Commands;
+using MailRu.Client.Model;
 using MailRu.Client.Services;
+using MailRu.Client.View;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -7,11 +9,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Input;
 
 namespace MailRu.Client.ViewModel
 {
     public class MainViewModel : BaseViewModel
     {
+        public ICommand ShowOptionsCommand { get; set; }
+        public ICommand ExitProgramCommand { get; set; }
+
+        public void ShowOptionsCommand_Execute()
+        {
+            var optionsWindow = new OptionsWindow();
+            optionsWindow.Show();
+        }
+
+        public bool ShowOptionsCommand_CanExecute()
+        {
+            return true;
+        }
+
+        public void ExitProgramCommand_Execute()
+        {
+            Application.Current.Shutdown();
+        }
+
+        public bool ExitProgramCommand_CanExecute()
+        {
+            return true;
+        }
+
         private ObservableCollection<Directory> _directories;
         private ObservableCollection<Message> _messages;
         private Auth _auth;
@@ -39,6 +66,9 @@ namespace MailRu.Client.ViewModel
 
         public MainViewModel(IMailService mailService, IOptionsService optionsService)
         {
+            ShowOptionsCommand = new Command(ShowOptionsCommand_Execute, ShowOptionsCommand_CanExecute);
+            ExitProgramCommand = new Command(ExitProgramCommand_Execute, ExitProgramCommand_CanExecute);
+
             _mailService = mailService;
             _optionsService = optionsService;
 

@@ -11,8 +11,8 @@
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Действия">
-                <MenuItem Header="Настройки"></MenuItem>
-                <MenuItem Header="Выход"></MenuItem>
+                <MenuItem Header="Настройки" Command="{Binding ShowOptionsCommand}"></MenuItem>
+                <MenuItem Header="Выход" Command="{Binding ExitProgramCommand}"></MenuItem>
             </MenuItem>
         </Menu>
         <Border DockPanel.Dock="Bottom" BorderThickness="1" BorderBrush="black" CornerRadius="6" Margin="10">

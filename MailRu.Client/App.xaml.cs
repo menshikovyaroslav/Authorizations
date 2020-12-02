@@ -32,6 +32,7 @@ namespace MailRu.Client
         private static void ConfigureServices(HostBuilderContext host, IServiceCollection services)
         {
             services.AddSingleton<MainViewModel>();
+            services.AddSingleton<OptionsViewModel>();
             services.AddSingleton<IMailService, MailRuService>();
             services.AddSingleton<IOptionsService, FileOptionsService>();
         }
