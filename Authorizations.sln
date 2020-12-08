@@ -63,8 +63,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "invest-idei.ru", "Catalogs\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "www.nseindia.com", "Catalogs\www.nseindia.com\www.nseindia.com.csproj", "{53FC53A1-68BA-4477-9D03-D718366EAC0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailRu.Client", "MailRu.Client\MailRu.Client.csproj", "{BCDCDA27-19D8-4BE8-9206-074A7FEBD8F0}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,10 +181,6 @@ Global
 		{53FC53A1-68BA-4477-9D03-D718366EAC0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53FC53A1-68BA-4477-9D03-D718366EAC0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53FC53A1-68BA-4477-9D03-D718366EAC0B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BCDCDA27-19D8-4BE8-9206-074A7FEBD8F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BCDCDA27-19D8-4BE8-9206-074A7FEBD8F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BCDCDA27-19D8-4BE8-9206-074A7FEBD8F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BCDCDA27-19D8-4BE8-9206-074A7FEBD8F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

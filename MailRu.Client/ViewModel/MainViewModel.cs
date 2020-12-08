@@ -22,6 +22,8 @@ namespace MailRu.Client.ViewModel
         {
             var optionsWindow = new OptionsWindow();
             optionsWindow.Show();
+
+
         }
 
         public bool ShowOptionsCommand_CanExecute()
