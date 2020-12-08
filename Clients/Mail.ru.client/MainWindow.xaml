@@ -1,0 +1,55 @@
+﻿<Window x:Class="Mail.ru.client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mail.ru.client"
+        xmlns:validation="clr-namespace:Mail.ru.client.Classes.ValidationRules"
+        mc:Ignorable="d"
+        Title="MainWindow" WindowState="Maximized">
+    <StackPanel Margin="20" DockPanel.Dock="Top" HorizontalAlignment="Left">
+        <GroupBox Header="Auth" Name="AuthPanel">
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.Resources>
+                    <Style TargetType="TextBox">
+                        <Setter Property="Width" Value="200"/>
+                        <Setter Property="Height" Value="30"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center"/>
+                    </Style>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="Margin" Value="10"/>
+                        <Setter Property="FontSize" Value="20"/>
+                    </Style>
+                </Grid.Resources>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Login"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Password"/>
+                <TextBox Grid.Row="0" Grid.Column="1">
+                    <Binding Path="Login" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <validation:NullValidationRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox>
+                <TextBox Grid.Row="1" Grid.Column="1">
+                    <Binding Path="Password" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <validation:NullValidationRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox>
+                <Button Name="LoginBtn" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Height="30" Width="100" HorizontalAlignment="Right" Content="Login" Click="LoginBtn_Click" IsEnabled="{Binding AuthButtonEnabled}" />
+            </Grid>
+        </GroupBox>
+    </StackPanel>
+
+</Window>
